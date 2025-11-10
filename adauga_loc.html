@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adaugă loc — City Flâneur</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-4">
+    <h2>Adaugă un loc nou</h2>
+    <form action="adauga_loc.html" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label class="form-label">Nume</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Tip</label>
+        <select name="type" class="form-select" required>
+          <option value="cafe">Cafenea</option>
+          <option value="restaurant">Restaurant</option>
+          <option value="museum">Muzeu</option>
+          <option value="park">Parc</option>
+          <option value="library">Librărie</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Adresă</label>
+        <input type="text" name="address" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Tags (separate cu virgula)</label>
+        <input type="text" name="tags" class="form-control" placeholder="ex: calm, artă, pentru citit">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Latitudine</label>
+        <input type="text" name="lat" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Longitudine</label>
+        <input type="text" name="lng" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Imagine</label>
+        <input type="file" name="image" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Descriere</label>
+        <textarea name="description" class="form-control" rows="4"></textarea>
+      </div>
+
+      <button class="btn btn-success">Salvează</button>
+    </form>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
